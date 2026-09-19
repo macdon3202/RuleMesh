@@ -21,6 +21,7 @@ cd frontend && npm test && npm run build
 
 ## StudioNet deployment
 
+- Live dApp: https://rulemesh.macdonnellhodgkinson3202.workers.dev
 - Contract: `0xfDb24153538249946f23a166485958493bf98420`
 - Version guard: `RULE_MESH_V1`
 - [Explorer](https://explorer-studio.genlayer.com/address/0xfDb24153538249946f23a166485958493bf98420)
