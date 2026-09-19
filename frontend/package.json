@@ -1,6 +1,23 @@
 {
-  "name":"rulemesh-web","private":true,"version":"1.0.0","type":"module",
-  "scripts":{"dev":"vite","build":"vite build","test":"node --test transactions.test.mjs"},
-  "dependencies":{"genlayer-js":"^1.1.8","react":"^19.1.1","react-dom":"^19.1.1","vite":"^7.3.1"},
-  "devDependencies":{}
+  "name": "rulemesh-web",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "test": "node --test transactions.test.mjs",
+    "deploy": "npm run build && wrangler deploy",
+    "preview": "npm run build && wrangler dev"
+  },
+  "dependencies": {
+    "genlayer-js": "^1.1.8",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "vite": "^7.3.1"
+  },
+  "devDependencies": {
+    "@cloudflare/vite-plugin": "^1.56.0",
+    "wrangler": "^4.135.0"
+  }
 }

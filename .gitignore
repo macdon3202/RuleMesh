@@ -6,5 +6,6 @@ artifacts/
 scripts/.state/
 frontend/node_modules/
 frontend/dist/
+frontend/.wrangler/
 frontend/.env.local
 *.log
