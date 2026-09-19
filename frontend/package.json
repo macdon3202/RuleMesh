@@ -7,8 +7,8 @@
     "dev": "vite",
     "build": "vite build",
     "test": "node --test transactions.test.mjs",
-    "deploy": "npm run build && wrangler deploy",
-    "preview": "npm run build && wrangler dev"
+    "deploy": "npm run build && wrangler pages deploy dist --project-name rulemesh --branch main",
+    "preview": "npm run build && wrangler pages dev dist"
   },
   "dependencies": {
     "genlayer-js": "^1.1.8",
@@ -17,7 +17,6 @@
     "vite": "^7.3.1"
   },
   "devDependencies": {
-    "@cloudflare/vite-plugin": "^1.56.0",
     "wrangler": "^4.135.0"
   }
 }
