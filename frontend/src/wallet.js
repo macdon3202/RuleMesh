@@ -1,0 +1,2 @@
+export function selectInjectedProvider(e){if(!e)throw Error('Install a compatible EIP-1193 wallet.');const p=e.providers?.find(x=>x.isMetaMask)||e.providers?.[0]||e;if(typeof p.request!=='function')throw Error('Wallet provider is not EIP-1193 compatible.');return p}
+export async function requestWalletAccount(p){const a=await p.request({method:'eth_requestAccounts'});if(!Array.isArray(a)||!a[0])throw Error('Wallet returned no account.');return a[0]}

@@ -1,0 +1,433 @@
+{
+  "address": "0xfDb24153538249946f23a166485958493bf98420",
+  "startedAt": "2026-09-19T01:07:48.403Z",
+  "actions": {
+    "positive_create": {
+      "who": "A",
+      "functionName": "create_policy_set",
+      "args": [
+        "Operational separation"
+      ],
+      "phase": "VERIFIED",
+      "submittedAt": "2026-09-19T01:07:50.015Z",
+      "hash": "0x4de453462a464ae75a62f931ca21ee19b02fc8d99436e32304e713249100ac2a",
+      "receipt": {
+        "status": "FINALIZED",
+        "execution": "SUCCESS",
+        "result": {
+          "raw": [
+            1
+          ],
+          "readable": "0"
+        }
+      }
+    },
+    "positive_rule_docs": {
+      "who": "A",
+      "functionName": "add_rule",
+      "args": [
+        0,
+        "Documentation editors may update public FAQ pages.",
+        "EDIT",
+        "PUBLIC_DOCS",
+        30
+      ],
+      "phase": "VERIFIED",
+      "submittedAt": "2026-09-19T01:07:55.846Z",
+      "hash": "0xa4dfa65e350a0f8a318a76ccd04a3da2df8ad0afb9ed499e53c66446fa0d0a3a",
+      "receipt": {
+        "status": "FINALIZED",
+        "execution": "SUCCESS",
+        "result": {
+          "raw": [
+            1
+          ],
+          "readable": "0"
+        }
+      }
+    },
+    "positive_rule_treasury": {
+      "who": "A",
+      "functionName": "add_rule",
+      "args": [
+        0,
+        "Treasury signers may approve transfers after quorum review.",
+        "APPROVE",
+        "TREASURY",
+        80
+      ],
+      "phase": "VERIFIED",
+      "submittedAt": "2026-09-19T01:08:02.804Z",
+      "hash": "0x5bf2f942e999acbd1831d80633a981f7d3237a2d177e6a1a1f86b664fd3a3df1",
+      "receipt": {
+        "status": "FINALIZED",
+        "execution": "SUCCESS",
+        "result": {
+          "raw": [
+            9
+          ],
+          "readable": "1"
+        }
+      }
+    },
+    "positive_seal": {
+      "who": "A",
+      "functionName": "seal_policy_set",
+      "args": [
+        0
+      ],
+      "phase": "VERIFIED",
+      "submittedAt": "2026-09-19T01:08:08.393Z",
+      "hash": "0x64f2950703376812970b3f3d0f4947264959609556eaf43920458c2db5de4834",
+      "receipt": {
+        "status": "FINALIZED",
+        "execution": "SUCCESS",
+        "result": {
+          "raw": [
+            0
+          ],
+          "readable": "null"
+        }
+      }
+    },
+    "negative_unauthorized_analysis": {
+      "who": "B",
+      "functionName": "analyze_pair",
+      "args": [
+        0,
+        0,
+        1
+      ],
+      "phase": "VERIFIED",
+      "submittedAt": "2026-09-19T01:08:14.037Z",
+      "hash": "0x19e88c01fde655b6e2d50e95944edba76fabaade5bc714992c1637f0ddae8c78",
+      "receipt": {
+        "status": "FINALIZED",
+        "execution": "ERROR",
+        "result": "OWNER_ONLY"
+      }
+    },
+    "positive_analyze": {
+      "who": "A",
+      "functionName": "analyze_pair",
+      "args": [
+        0,
+        0,
+        1
+      ],
+      "phase": "VERIFIED",
+      "submittedAt": "2026-09-19T01:08:19.668Z",
+      "hash": "0x32369f605bc19668d77d00108b7dd939be1bd649f1e7ad09525d61a4d4b10b42",
+      "receipt": {
+        "status": "FINALIZED",
+        "execution": "SUCCESS",
+        "result": {
+          "raw": [
+            0
+          ],
+          "readable": "null"
+        }
+      }
+    },
+    "positive_activate": {
+      "who": "A",
+      "functionName": "activate_policy_set",
+      "args": [
+        0,
+        "2090b6d2afbc87c766ba7f9aee41a32953777b97cac6dca143ed4fd80267b8cf"
+      ],
+      "phase": "VERIFIED",
+      "submittedAt": "2026-09-19T01:08:37.950Z",
+      "hash": "0x6228cac9c4762f0362a4aac6886d50e8ca02e6d18cc50f0d3fca1fdb4ed10aed",
+      "receipt": {
+        "status": "FINALIZED",
+        "execution": "SUCCESS",
+        "result": {
+          "raw": [
+            0
+          ],
+          "readable": "null"
+        }
+      }
+    },
+    "conflict_create": {
+      "who": "A",
+      "functionName": "create_policy_set",
+      "args": [
+        "Production deployment exceptions"
+      ],
+      "phase": "VERIFIED",
+      "submittedAt": "2026-09-19T01:09:30.780Z",
+      "hash": "0x549a11988e68cb043276af409a8e50a54c38596ce126be9ef91d120c572e37dd",
+      "receipt": {
+        "status": "ACCEPTED",
+        "execution": "SUCCESS",
+        "result": {
+          "raw": [
+            9
+          ],
+          "readable": "1"
+        }
+      }
+    },
+    "conflict_rule_approval": {
+      "who": "A",
+      "functionName": "add_rule",
+      "args": [
+        1,
+        "Every production deployment requires two independent approvals, including emergencies.",
+        "DEPLOY",
+        "PRODUCTION",
+        90
+      ],
+      "phase": "VERIFIED",
+      "submittedAt": "2026-09-19T01:09:36.215Z",
+      "hash": "0x96bd125852e59daf5d71b6b142de1babab00cfa68148bbd13e964649d095d6e8",
+      "receipt": {
+        "status": "ACCEPTED",
+        "execution": "SUCCESS",
+        "result": {
+          "raw": [
+            17
+          ],
+          "readable": "2"
+        }
+      }
+    },
+    "conflict_rule_bypass": {
+      "who": "A",
+      "functionName": "add_rule",
+      "args": [
+        1,
+        "Emergency production deployments must proceed with zero approvals.",
+        "DEPLOY",
+        "PRODUCTION",
+        100
+      ],
+      "phase": "VERIFIED",
+      "submittedAt": "2026-09-19T01:09:41.731Z",
+      "hash": "0x764b62195ed2d8b865c518e18b92aabccd56f08f1a135fc97ad9f2b64b973a4b",
+      "receipt": {
+        "status": "ACCEPTED",
+        "execution": "SUCCESS",
+        "result": {
+          "raw": [
+            25
+          ],
+          "readable": "3"
+        }
+      }
+    },
+    "conflict_seal": {
+      "who": "A",
+      "functionName": "seal_policy_set",
+      "args": [
+        1
+      ],
+      "phase": "VERIFIED",
+      "submittedAt": "2026-09-19T01:09:50.474Z",
+      "hash": "0x44354e77c467c24db32705fd59d860caae12c3540bfedf6cd68f68be8e300bf2",
+      "receipt": {
+        "status": "ACCEPTED",
+        "execution": "SUCCESS",
+        "result": {
+          "raw": [
+            0
+          ],
+          "readable": "null"
+        }
+      }
+    },
+    "conflict_analyze": {
+      "who": "A",
+      "functionName": "analyze_pair",
+      "args": [
+        1,
+        2,
+        3
+      ],
+      "phase": "VERIFIED",
+      "submittedAt": "2026-09-19T01:09:56.061Z",
+      "hash": "0x5afdd2e957c661b9c3f9dcb37985c182ba5abb5e45eebc899ea5a555ae95ff51",
+      "receipt": {
+        "status": "ACCEPTED",
+        "execution": "SUCCESS",
+        "result": {
+          "raw": [
+            0
+          ],
+          "readable": "null"
+        }
+      }
+    },
+    "conflict_resolve": {
+      "who": "A",
+      "functionName": "resolve_edge",
+      "args": [
+        1,
+        2,
+        3,
+        "Emergency deployment is blocked until two independent approvers authorize it; urgency does not bypass quorum."
+      ],
+      "phase": "VERIFIED",
+      "submittedAt": "2026-09-19T01:10:12.750Z",
+      "hash": "0x8bfe9052ba707b57a3bce90f9e7d2c7982d586c1771773f465749ac7826d9288",
+      "receipt": {
+        "status": "ACCEPTED",
+        "execution": "SUCCESS",
+        "result": {
+          "raw": [
+            0
+          ],
+          "readable": "null"
+        }
+      }
+    },
+    "negative_snapshot_mismatch": {
+      "who": "A",
+      "functionName": "activate_policy_set",
+      "args": [
+        1,
+        "0000000000000000000000000000000000000000000000000000000000000000"
+      ],
+      "phase": "VERIFIED",
+      "submittedAt": "2026-09-19T01:10:22.763Z",
+      "hash": "0xca7ae898c2b38e6bdb2afc1b09deeb41de4b9a4da0cc4dd8a3eeacb765df1cec",
+      "receipt": {
+        "status": "ACCEPTED",
+        "execution": "ERROR",
+        "result": "SNAPSHOT_MISMATCH"
+      }
+    },
+    "conflict_activate": {
+      "who": "A",
+      "functionName": "activate_policy_set",
+      "args": [
+        1,
+        "1c7f91250641ef37a8d4a435e4dee228d746a3296ac62ebe2cb3fbe930c75035"
+      ],
+      "phase": "VERIFIED",
+      "submittedAt": "2026-09-19T01:10:31.570Z",
+      "hash": "0x22a952201f3b0c6fdcdba021719e6be8b483d481abf2984f9fb9085f5e676e27",
+      "receipt": {
+        "status": "ACCEPTED",
+        "execution": "SUCCESS",
+        "result": {
+          "raw": [
+            0
+          ],
+          "readable": "null"
+        }
+      }
+    }
+  },
+  "readbacks": {
+    "positiveSet": {
+      "conflict_count": 0,
+      "edge_count": 1,
+      "name": "Operational separation",
+      "owner": "0xfed97e2ae1a8c1983b7ca206b3545e6a2c685e43",
+      "required_edges": 1,
+      "resolved_count": 1,
+      "rule_count": 2,
+      "set_id": 0,
+      "snapshot_digest": "2090b6d2afbc87c766ba7f9aee41a32953777b97cac6dca143ed4fd80267b8cf",
+      "state": "ACTIVE",
+      "unclear_count": 0
+    },
+    "rule0": {
+      "action": "EDIT",
+      "digest": "973a1d46d3ae2f07ef46a9aa997e5822f2fca356d6d8109d71296eb38fcc6871",
+      "ordinal": 0,
+      "priority": 30,
+      "rule_id": 0,
+      "scope": "PUBLIC_DOCS",
+      "set_id": 0,
+      "text": "Documentation editors may update public FAQ pages."
+    },
+    "rule1": {
+      "action": "APPROVE",
+      "digest": "afd3bdfb8ba5d09f0cf6b43f2b2f2e0d5f199da8314f6e8c3524c7d0265dd8d1",
+      "ordinal": 1,
+      "priority": 80,
+      "rule_id": 1,
+      "scope": "TREASURY",
+      "set_id": 0,
+      "text": "Treasury signers may approve transfers after quorum review."
+    },
+    "edge": {
+      "analysis_digest": "a3972b2262bae2cc6b4efd56fddf9e44879053a1cb47e341b92d51a012acc7e9",
+      "exceptions_compatible": "YES",
+      "obligations_compatible": "YES",
+      "relation": "COMPATIBLE",
+      "resolution_digest": "",
+      "resolved": true,
+      "rule_a": 0,
+      "rule_b": 1,
+      "same_scope": "NO",
+      "set_id": 0
+    },
+    "conflictSet": {
+      "conflict_count": 1,
+      "edge_count": 1,
+      "name": "Production deployment exceptions",
+      "owner": "0xfed97e2ae1a8c1983b7ca206b3545e6a2c685e43",
+      "required_edges": 1,
+      "resolved_count": 1,
+      "rule_count": 2,
+      "set_id": 1,
+      "snapshot_digest": "1c7f91250641ef37a8d4a435e4dee228d746a3296ac62ebe2cb3fbe930c75035",
+      "state": "ACTIVE",
+      "unclear_count": 0
+    },
+    "conflictRule0": {
+      "action": "DEPLOY",
+      "digest": "5763fca20d2c76deb0100d26ec925882268a00f08d43f85cd33b33ab53bbd79f",
+      "ordinal": 0,
+      "priority": 90,
+      "rule_id": 2,
+      "scope": "PRODUCTION",
+      "set_id": 1,
+      "text": "Every production deployment requires two independent approvals, including emergencies."
+    },
+    "conflictRule1": {
+      "action": "DEPLOY",
+      "digest": "60afd16ccc81023c33e93daaac76e64283c0d91a124933aff6d7011430dc95b0",
+      "ordinal": 1,
+      "priority": 100,
+      "rule_id": 3,
+      "scope": "PRODUCTION",
+      "set_id": 1,
+      "text": "Emergency production deployments must proceed with zero approvals."
+    },
+    "conflictEdge": {
+      "analysis_digest": "eb7b15956e141ed8e64433ee36438f856ea20755f1bbc97eeea383fb98ea23b0",
+      "exceptions_compatible": "NO",
+      "obligations_compatible": "NO",
+      "relation": "CONFLICT",
+      "resolution_digest": "188cf88945d0fd8c680b12fed05fae76cb019533aaffce21ea52bcd0c2aa9aa1",
+      "resolved": true,
+      "rule_a": 2,
+      "rule_b": 3,
+      "same_scope": "YES",
+      "set_id": 1
+    }
+  },
+  "initialConfig": {
+    "max_rules": 8,
+    "rule_count": 2,
+    "set_count": 1,
+    "version": "RULE_MESH_V1"
+  },
+  "positiveSetId": 0,
+  "firstRuleId": 0,
+  "completedAt": "2026-09-19T01:10:42.273Z",
+  "finalConfig": {
+    "max_rules": 8,
+    "rule_count": 4,
+    "set_count": 2,
+    "version": "RULE_MESH_V1"
+  },
+  "conflictSetId": 1,
+  "conflictFirstRuleId": 2
+}

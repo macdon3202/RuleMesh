@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+artifacts/
+.tmp/
+scripts/.state/
+frontend/node_modules/
+frontend/dist/
+frontend/.env.local
+*.log
