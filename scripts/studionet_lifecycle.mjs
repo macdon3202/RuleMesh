@@ -42,7 +42,7 @@ async function main(){
  await send('conflict_seal','A','seal_policy_set',[c]);
  await send('conflict_analyze','A','analyze_pair',[c,c0,c1]);
  let cs=await read('get_policy_set',[c]);
- if(cs.state!=='CONFLICTED')throw Error(`EXPECTED_CONFLICTED_GOT_${cs.state}`);
+ if(!state.actions.conflict_resolve&&cs.state!=='CONFLICTED')throw Error(`EXPECTED_CONFLICTED_GOT_${cs.state}`);
  await send('conflict_resolve','A','resolve_edge',[c,c0,c1,'Emergency deployment is blocked until two independent approvers authorize it; urgency does not bypass quorum.']);
  cs=await read('get_policy_set',[c]);
  await send('negative_snapshot_mismatch','A','activate_policy_set',[c,'0'.repeat(64)],true);

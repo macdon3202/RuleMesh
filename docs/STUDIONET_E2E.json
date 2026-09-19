@@ -160,7 +160,7 @@
       "submittedAt": "2026-09-19T01:09:30.780Z",
       "hash": "0x549a11988e68cb043276af409a8e50a54c38596ce126be9ef91d120c572e37dd",
       "receipt": {
-        "status": "ACCEPTED",
+        "status": "FINALIZED",
         "execution": "SUCCESS",
         "result": {
           "raw": [
@@ -184,7 +184,7 @@
       "submittedAt": "2026-09-19T01:09:36.215Z",
       "hash": "0x96bd125852e59daf5d71b6b142de1babab00cfa68148bbd13e964649d095d6e8",
       "receipt": {
-        "status": "ACCEPTED",
+        "status": "FINALIZED",
         "execution": "SUCCESS",
         "result": {
           "raw": [
@@ -208,7 +208,7 @@
       "submittedAt": "2026-09-19T01:09:41.731Z",
       "hash": "0x764b62195ed2d8b865c518e18b92aabccd56f08f1a135fc97ad9f2b64b973a4b",
       "receipt": {
-        "status": "ACCEPTED",
+        "status": "FINALIZED",
         "execution": "SUCCESS",
         "result": {
           "raw": [
@@ -228,7 +228,7 @@
       "submittedAt": "2026-09-19T01:09:50.474Z",
       "hash": "0x44354e77c467c24db32705fd59d860caae12c3540bfedf6cd68f68be8e300bf2",
       "receipt": {
-        "status": "ACCEPTED",
+        "status": "FINALIZED",
         "execution": "SUCCESS",
         "result": {
           "raw": [
@@ -250,7 +250,7 @@
       "submittedAt": "2026-09-19T01:09:56.061Z",
       "hash": "0x5afdd2e957c661b9c3f9dcb37985c182ba5abb5e45eebc899ea5a555ae95ff51",
       "receipt": {
-        "status": "ACCEPTED",
+        "status": "FINALIZED",
         "execution": "SUCCESS",
         "result": {
           "raw": [
@@ -273,7 +273,7 @@
       "submittedAt": "2026-09-19T01:10:12.750Z",
       "hash": "0x8bfe9052ba707b57a3bce90f9e7d2c7982d586c1771773f465749ac7826d9288",
       "receipt": {
-        "status": "ACCEPTED",
+        "status": "FINALIZED",
         "execution": "SUCCESS",
         "result": {
           "raw": [
@@ -294,7 +294,7 @@
       "submittedAt": "2026-09-19T01:10:22.763Z",
       "hash": "0xca7ae898c2b38e6bdb2afc1b09deeb41de4b9a4da0cc4dd8a3eeacb765df1cec",
       "receipt": {
-        "status": "ACCEPTED",
+        "status": "FINALIZED",
         "execution": "ERROR",
         "result": "SNAPSHOT_MISMATCH"
       }
@@ -310,7 +310,7 @@
       "submittedAt": "2026-09-19T01:10:31.570Z",
       "hash": "0x22a952201f3b0c6fdcdba021719e6be8b483d481abf2984f9fb9085f5e676e27",
       "receipt": {
-        "status": "ACCEPTED",
+        "status": "FINALIZED",
         "execution": "SUCCESS",
         "result": {
           "raw": [
@@ -415,13 +415,13 @@
   },
   "initialConfig": {
     "max_rules": 8,
-    "rule_count": 2,
-    "set_count": 1,
+    "rule_count": 4,
+    "set_count": 2,
     "version": "RULE_MESH_V1"
   },
   "positiveSetId": 0,
   "firstRuleId": 0,
-  "completedAt": "2026-09-19T01:10:42.273Z",
+  "completedAt": "2026-09-19T01:31:52.687Z",
   "finalConfig": {
     "max_rules": 8,
     "rule_count": 4,
